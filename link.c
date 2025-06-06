@@ -40,26 +40,24 @@ void main()
     	{
     	case 1:
 	    printf("Enter the number of elements in the list: \n");
-        scanf("%d", &n);
-        printf("Enter the elements: \n");
-        for(i = 0; i < n; i++) 
-		{
-             scanf("%d", &list[i].info);
-             list[i].link = NULL; // Initialize link to NULL
-        }
-        printf("Linked List: \n");
-        link(list, n);
-        break;
-        
+            scanf("%d", &n);
+            printf("Enter the elements: \n");
+            for(i = 0; i < n; i++) 
+	    {
+               scanf("%d", &list[i].info);
+               list[i].link = NULL; // Initialize link to NULL
+            }
+            printf("Linked List: \n");
+            link(list, n);
+            break;
         case 2:
-        traverse(list);
-        break;
+            traverse(list);
+            break;
         default:
-        printf("invalid choice");
+            printf("invalid choice");
         }
         printf("Enter your choice: ");
         scanf("%d", &choice);
       }while(choice!=0);
-
 }
 
